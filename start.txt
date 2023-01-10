@@ -1,0 +1,4 @@
+REACT_APP_API_URL="YOUR_API_URL" npm start
+
+Esse comando deve ser rodado no terminal para setar a variavel de ambiente que armanezaro endereço do banco de dados
+E iniciar a aplicação 

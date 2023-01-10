@@ -1,8 +1,14 @@
+import Footer from './components/Footer.js' 
+import Header from './components/Header.js';
+import Presentes from './components/Presentes.js';
+import './index.css';
 
 function App() {
   return (
     <>
-    <h1>Oi esta abrindo</h1>
+      <Header texto ="Texto do casamento da talita e da rafa"/>
+      <Presentes/>
+      <Footer/>
     </>
   );
 }

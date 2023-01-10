@@ -1,0 +1,13 @@
+/*   --------- Colors -------- */
+.colorScale1 {color: #D9D6D0};
+.colorScale2 {color: #8C593B};
+.colorScale3 {color: #A68C7C};
+.colorScale4 {color: #592512};
+.colorScale5 {color: #8C3D20};
+
+/*  ---------- Estilos Gerais -------- */ 
+body{
+    background-color: blue;
+}
+
+/* ------------- Rodapé ------------- */
