@@ -8,8 +8,7 @@ body{
     max-width: 1440px;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 0px;
-    border: 1px solid #8C3D20
+    padding: 0;
 }
 
 h1,h2 {
@@ -22,12 +21,51 @@ h1,h2 {
     cursor: pointer;
 
 }
+/* ------------------- header ------------- */
 
+#containerSlide img{
+    max-width: 100%;
+    margin: 0; 
+    padding: 0;
+}
+.beforeImage,.afterImage {
+    margin: 0;
+    width: 100%;
+    max-width: 1440px;
+    position: absolute;
+    height: 40px;
+    background-color: rgb(166,140,124, 0.3);
+    display: block;
+}
+.afterImage{
+   margin-top: -43.5px;
+}
+
+#introduction{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top:200px;
+    max-width: 1440px;
+    flex-direction: column;
+    align-items: center;
+}
+#introduction h1{
+    max-width: 600px;
+    text-align: center;
+    font-size: 30px;
+}
+#introduction p {
+    padding-left: 300px;
+    font-size: 20px;
+}
 /* ------------- Presentes ----------------*/
 #containerPresentes {
+    margin-top: -5px;
     max-width: 1440px;
     background-color: rgba(89,37,18,.7);
     padding:30px;
+    border-top: 3px solid #b9b6b0;
 }
 #containerPresentes h1{
     text-align: center;
