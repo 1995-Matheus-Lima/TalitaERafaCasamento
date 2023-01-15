@@ -17,7 +17,6 @@ const Header = (props) => {
 
   useEffect(() => { 
     setTimeout(() => {
-      console.log(estado)
       if(estado >= 9 ){
         setEstado(0);
       }else{

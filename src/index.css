@@ -93,14 +93,16 @@ h1,h2 {
     padding: 30px 60px 0 60px;
     display: flex;
     justify-content: space-evenly;
+    
 }
 #containerPresente h1{
     letter-spacing: normal;
     text-transform: capitalize;
     font-size: 25px;
+    width: 100%;
 }
 #containerPresente h1::after{
-    content:none
+    content:none;
 }
 #containerPresente div a{
     text-decoration: none;

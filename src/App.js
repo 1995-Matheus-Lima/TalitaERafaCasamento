@@ -9,16 +9,14 @@ function App() {
   const [modal,setModal] = useState(false);
   const [nome, setNome] = useState(null);
   const [email,setEmail] = useState(null);
-  
-  const handleClick = () =>{
-    setModal((e) => !e);
-  }
+  const [id,setId] = useState(null);
+
   return (
     <div id="mainContainer">
       <Header texto ="Texto do casamento da talita e da rafa"/>
-      <Presentes setModal = {setModal}/>
+      <Presentes setModal = {setModal} setId={setId}/>
       <Footer/>
-      {modal?<Modal setModal={setModal} modal={modal}/>:null}
+      {modal?<Modal setModal={setModal} nome={nome} setNome={setNome} email={email} setEmail={setEmail} id={id}/>:null}
     </div>
   );
 }
