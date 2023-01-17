@@ -10,7 +10,7 @@ const Presente = ({setModal,setId,dado}) => {
         <div>
             <img src={"https://imgcloud.com.br/share/a94EuAF9TkKcEOFW"}></img>
         </div>
-        <div>
+        <div className={'infoPresentes'}>
             <h1>{dado.titulo}</h1>
             <h2>Cor: {dado.cor}</h2>
             <h2>link: <a href ={dado.linkLoja} target='_blank'>Sugestão de loja</a></h2>

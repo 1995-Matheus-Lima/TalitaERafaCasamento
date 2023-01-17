@@ -2,15 +2,8 @@ import React, { useEffect } from 'react';
 import Presente from './Presente';
 
 
-const Presentes = ({setModal,setId}) => {
-    const [dados, setDados] = React.useState(null);
-    const getData = async() =>{
-      const response = await fetch(process.env.REACT_APP_API_URL).then(r => r.json());
-      await setDados(response);
-    }
-    useEffect( () => {
-      getData();
-    },[""])
+const Presentes = ({setModal,setId,dados}) => {
+  
   return (
     <div id="containerPresentes">
       <h1>Presentes</h1>
