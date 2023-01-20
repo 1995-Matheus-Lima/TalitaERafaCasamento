@@ -12,7 +12,7 @@ const Presente = ({setModal,setId,dado}) => {
         </div>
         <div className={'infoPresentes'}>
             <h1>{dado.titulo}</h1>
-            <h2>Cor: {dado.cor}</h2>
+            <h2>Cor:  &nbsp;&nbsp;&nbsp;&nbsp;{dado.cor}</h2>
             <h2>link: <a href ={dado.linkLoja} target='_blank'>Sugestão de loja</a></h2>
             <button className='highPass' onClick={handleClick}>Presentear</button>
         </div>

@@ -34,11 +34,11 @@ const Modal = ({nome, setNome , email, setEmail,setModal, id, dados}) => {
     body: JSON.stringify({
         nome:nome,
         email:email,
-     //   presenteado:true
+        presenteado:true
       })
     })
   
-    //sendEmail();
+    sendEmail();
     await setDisplay('none');
     setTimeout(() =>{
       document.getElementById("obs").innerText = "Presente Enviado com sucesso"; 
