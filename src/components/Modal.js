@@ -97,7 +97,7 @@ const Modal = ({nome, setNome , email, setEmail,setModal, id, dados}) => {
         <form id="modalForm"  type='submit' >
             <h1>{dados.filter(dado => dado.id === id)[0].titulo}</h1>
             <div className='textLike'>
-            <label htmlFor="nome" className="highPass">Email</label>
+            <label htmlFor="nome" className="highPass">Nome</label>
             <input type="text"  onChange={(e) => setNome(e.target.value)}id="nome" required/>
             </div>
             <div className='textLike'>

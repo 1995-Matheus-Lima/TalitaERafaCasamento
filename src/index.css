@@ -64,6 +64,44 @@ h1,h2 {
     padding-left: 300px;
     font-size: 20px;
 }
+
+/*---------------Contador -----------------*/
+#container_contador{
+    background-color: rgba(89,37,18,.95);
+    margin: 0px;
+    padding: 40px 0px;
+}
+#container_contador h1{
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+#container_contador h1::after{
+    content: " ";
+    display: block;
+    width: 200px;
+    margin: 10px auto 0 auto;
+    border: 1px solid #b9b6b0;
+    background-color: #b9b6b0;
+}
+#container_contador ul{
+    list-style: none;
+    display: flex;
+    margin:0 auto;
+    max-width: 700px;
+    justify-content: space-around;
+    padding: 0px;
+}
+#container_contador ul li{
+    font-size: 16px;
+    width: 120px;
+    height: 90px;
+    padding-top: 20px;
+    border:  2px solid #b9b6b0;
+    text-align: center;
+    border-radius: 15px;
+}
 /* ------------- Presentes ----------------*/
 #containerPresentes {
     margin-top: -5px;

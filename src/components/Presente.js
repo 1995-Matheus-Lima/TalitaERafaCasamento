@@ -8,7 +8,7 @@ const Presente = ({setModal,setId,dado}) => {
   return (
     <div id="containerPresente">
         <div>
-            <img src={"https://imgcloud.com.br/share/a94EuAF9TkKcEOFW"}></img>
+            <img src={dado.linkImage}></img>
         </div>
         <div className={'infoPresentes'}>
             <h1>{dado.titulo}</h1>
