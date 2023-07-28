@@ -26,7 +26,7 @@ const CountdownTimer = ({ targetDate }) => {
 
   return (
     <div id= "container_contador">
-      <h1>Contagem regressiva para o grande dia</h1>
+      <h1>Contagem Regressiva</h1>
       <ul>
       <li> <h2>{`${timeLeft.days}`}</h2> <h2>Dias</h2> </li>
       <li> <h2>{`${timeLeft.hours}`}</h2> <h2>Horas</h2> </li>

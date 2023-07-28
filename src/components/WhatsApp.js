@@ -6,7 +6,7 @@ const WhatsApp = ({numTelefone, mensagem}) => {
     <div id="whatsapp">
       <a href={`https://api.whatsapp.com/send?phone=${numTelefone}
       &text=${mensagem}`} target="_blank" rel="noopener" >
-      <p>Conversar com talita e rafa</p>
+      <p>Conversar com Talita e Rafa</p>
       <img id="wp-icon" src={AppImg} alt="Clique aqui para falar com a gente pelo Whatsapp!"/>
       </a>
     </div>

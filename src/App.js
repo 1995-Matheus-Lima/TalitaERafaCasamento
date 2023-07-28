@@ -5,7 +5,8 @@ import Modal from './components/Modal.js';
 import Presentes from './components/Presentes.js';
 import WhatsApp from './components/WhatsApp.js';
 import CountdownTimer from './components/Timer.js'
-
+import WeddingInfo from './components/info.js'
+import LoveQuote from './components/frase.js'
 
 function App() {
   const [modal,setModal] = useState(false);
@@ -25,6 +26,8 @@ function App() {
   return (
     <div id="mainContainer">
       <Header texto ="Texto do casamento da talita e da rafa"/>
+      <LoveQuote/>
+      <WeddingInfo/>
       <CountdownTimer targetDate={targetDate}/>
       <Presentes setModal = {setModal} setId={setId} dados ={dados}/>
       <WhatsApp numTelefone={"5511982813127"} mensagem ={"Olá gente linda!"}/>

@@ -2,8 +2,11 @@
 body{
     margin: 0px;
     color:#b9b6b0;
-    font-family: "helvetica", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
+}
+li{
+    line-height:150%;
 }
 #mainContainer {
     display: block;
@@ -16,6 +19,9 @@ body{
 
 h1,h2 {
     margin: 0px;
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
 }
 
 .highPass:hover{
@@ -31,6 +37,9 @@ h1,h2 {
     margin: 0; 
     padding: 0;
 }
+#containerSlide{
+background-color: rgb(166,140,124,.7);
+}
 .beforeImage,.afterImage {
     margin: 0;
     width: 100%;
@@ -44,11 +53,22 @@ h1,h2 {
    margin-top:calc(-4vw - 3.5px);
 }
 
+@keyframes fadeInOut {
+    0% { opacity: .9; }
+    50% { opacity: 1; }
+    100% { opacity: .9; }
+}
+  
+.transitioning-image {
+    animation: fadeInOut 5s infinite;
+    background-color: rgb(166,140,124, 0.3);
+  }
+  
 #introduction{
     display: flex;
     position: absolute;
     width: 100%;
-    top:150px;
+    top:100px;
     max-width: 1440px;
     flex-direction: column;
     align-items: center;
@@ -56,7 +76,6 @@ h1,h2 {
 #introduction h1{
     max-width: 600px;
     text-align: center;
-    font-size: 30px;
     font-family: 'Dancing Script', cursive;
 }
 #introduction p {
@@ -65,22 +84,71 @@ h1,h2 {
     font-size: 20px;
 }
 
+
+
+/* ---------------Frases------------------- */
+#frase{
+    background-color: rgba(89,37,18,.95);
+    padding: 40px 0px 40px 0px;
+    margin: -5px 0px 0px 0px;
+    border-top: 4px solid #b9b6b0;
+
+
+}
+#frase h1{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+#frase p{
+    max-width: 100px;
+    margin: 20px 30% 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+/*----------------infos--------------------*/
+#infoContainer{
+    background-color: rgba(89,37,18,.95);
+    padding: 40px 0px 40px 0px;
+    margin: 0px;
+    border-top: 3px solid #b9b6b0;
+
+}
+
+#infoContainer h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+#infoContainer h1::after{
+    content: " ";
+    display: block;
+    width: 140px;
+    margin: 10px auto 0 auto;
+    border: 1px solid #b9b6b0;
+    background-color: #b9b6b0;
+}
+#infoContent{
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+}
 /*---------------Contador -----------------*/
 #container_contador{
     background-color: rgba(89,37,18,.95);
     margin: 0px;
-    padding: 40px 0px;
+    padding: 40px 0px 40px 0px;
+    margin: -5px 0px 0px 0px;
+    border-top: 3px solid #b9b6b0;
+    border-bottom: 3px solid #b9b6b0;
 }
 #container_contador h1{
     margin-bottom: 30px;
     text-align: center;
-
 }
 
 #container_contador h1::after{
     content: " ";
     display: block;
-    width: 200px;
+    width: 140px;
     margin: 10px auto 0 auto;
     border: 1px solid #b9b6b0;
     background-color: #b9b6b0;
@@ -94,12 +162,14 @@ h1,h2 {
     padding: 0px;
 }
 #container_contador ul li{
+    display: flex;
     font-size: 16px;
     width: 120px;
-    height: 90px;
-    padding-top: 20px;
+    height:100px;
     border:  2px solid #b9b6b0;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     border-radius: 15px;
 }
 /* ------------- Presentes ----------------*/
@@ -112,16 +182,14 @@ h1,h2 {
 }
 #containerPresentes h1{
     text-align: center;
-    text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
     letter-spacing: .1em;
     color: #b9b6b0;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 #containerPresentes h1::after{
     content: " ";
     display: block;
-    width: 150px;
+    width: 140px;
     margin: 10px auto 0 auto;
     border: 1px solid #b9b6b0;
     background-color: #b9b6b0;
@@ -132,20 +200,41 @@ h1,h2 {
     background-color: rgba(140,89,59,.4);
     margin:50px auto 0 auto;
     border:2px solid #b9b6b0;
-    height: 300px;
+
     border-radius: 40px;
     padding: 30px 60px 0 60px;
     display: flex;
     justify-content: space-evenly;
-    
+    flex-direction: column;
+    padding: 20px 10px;
+}
+#giftShown{
+    margin: 0 auto;
+    display: flex;
+    flex-direction:row;
+    max-width: 960px;
+    flex-wrap: wrap;
+}
+.infoPresentes{
+    text-align: center;
+    padding:5px 10px;
+}
+#presentesInfo{
+    display: block;
+    margin:0 auto;
+    max-width:960px;
+}
+#presentesInfo p{
+    line-height: 150%;
+    text-indent: 30px;
 }
 #containerPresente div {
     margin-right: 20px;
 }
-#containerPresente h1{
+#containerPresente h2{
     letter-spacing: .07em;
-    text-transform: capitalize;
-    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
     width: 100%;
 }
 #containerPresente h1::after{
@@ -162,16 +251,18 @@ h1,h2 {
     text-decoration: underline;
 }
 #containerPresente div{
-    width: 250px;
-    padding-bottom: 40px;
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    padding: 15px 20px 20px 20px;
     display: flex;
     flex-direction: column;
-    align-items:baseline;
+    align-items:center;
     justify-content: space-evenly;
 }
 #containerPresente div button {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     width:200px;
     height: 40px;
     border-radius: 20px;
@@ -187,10 +278,20 @@ h1,h2 {
     cursor: pointer;
 }
 #containerPresente div img{
-    width: 250px;
-    min-height: 250px;
+    width: 200px;
+    height: 180px;
     border-radius: 30px;
 }
+#containerPresente div h2{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+} 
+#containerPresente div h3{
+    margin: 10px 0;
+} 
+
 /* ------------- Rodapé ------------- */
 footer{
     max-width: 1440px;
@@ -537,4 +638,22 @@ footer a:hover{
         text-align: center;
     }
     
+}
+
+
+
+/*Padrão tamanhos de fonte*/
+h1{
+    color:#d9d6d0;
+    font-size: 40px;
+}
+h2{
+    font-size: 20px;
+    font-weight: 700;
+    color:#d9d6d0
+}
+h3, p, li{
+    color:#d9d6d0;
+    font-size: 16px;
+    font-weight: 700;
 }

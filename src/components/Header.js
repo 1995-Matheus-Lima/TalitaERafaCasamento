@@ -7,38 +7,36 @@ import RT4 from "../assets/RT4.png"
 import RT5 from "../assets/RT5.png"
 import RT6 from "../assets/RT6.png"
 import RT7 from "../assets/RT7.png"
-import RT8 from "../assets/RT8.png"
-import RT9 from "../assets/RT9.png"
 
 const Header = (props) => {
-  const fotos = [RT0,RT1,RT2,RT3,RT4,RT5,RT6,RT7,RT8,RT9];
+  const fotos = [RT0,RT1,RT2,RT3,RT4,RT5,RT6,RT7];
   const [estado, setEstado] = React.useState(0);
   const [foto, setFoto] = React.useState(fotos[estado]);
 
   useEffect(() => { 
     setTimeout(() => {
-      if(estado >= 9 ){
+      if(estado >= 7 ){
         setEstado(0);
       }else{
         setEstado(e => (e +1));
       }
       setFoto(fotos[estado])
-    } , 3000)}   
+    } , 5000)}   
   ,[estado])
 
 
   return (
     <div id="containerSlide">
-      <div className='beforeImage'></div>
       <div>
-        <img src={foto}/>
+      <div id="fimagePrincipal">
+        <img src={foto} className='transitioning-image'/>
       </div>
       <div id="introduction">
-        <h1>“ Lorem ipsum dolor sit amet, consecteturadipiscing elit. Morbi porta leo id aliquet sagittis.Nulla blandit
-sapien vitae sagittis euismod.“</h1>
-        <p>Rafaela e Talita</p>
+        <h1>“No momento em que escolhemos amar, começamos a nos mover contra a dominação, contra a opressão. No momento em que escolhemos amar, começamos a nos mover em direção à liberdade, a agir de formas que libertam a nós e aos outros.”</h1>
+        <p>Bell Hooks</p>
       </div>
       <div className='afterImage'></div>
+      </div>
     </div>
   )
 }
