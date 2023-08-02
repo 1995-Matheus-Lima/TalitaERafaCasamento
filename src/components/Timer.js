@@ -28,10 +28,10 @@ const CountdownTimer = ({ targetDate }) => {
     <div id= "container_contador">
       <h1>Contagem Regressiva</h1>
       <ul>
-      <li> <h2>{`${timeLeft.days}`}</h2> <h2>Dias</h2> </li>
-      <li> <h2>{`${timeLeft.hours}`}</h2> <h2>Horas</h2> </li>
-      <li> <h2>{`${timeLeft.minutes}`}</h2> <h2>Minutos</h2> </li>
-      <li> <h2>{`${timeLeft.seconds}`}</h2> <h2>Segundos</h2> </li>
+      <li> <p>{`${timeLeft.days}`}</p> <p>Dias</p> </li>
+      <li> <p>{`${timeLeft.hours}`}</p> <p>Horas</p> </li>
+      <li> <p>{`${timeLeft.minutes}`}</p> <p>Minutos</p> </li>
+      <li> <p>{`${timeLeft.seconds}`}</p> <p>Segundos</p> </li>
     </ul>
     </div>
   );

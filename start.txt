@@ -2,3 +2,174 @@ REACT_APP_API_URL="YOUR_API_URL" npm start
 
 Esse comando deve ser rodado no terminal para setar a variavel de ambiente que armanezaro endereço do banco de dados
 E iniciar a aplicação 
+
+/*   ---------------- Responsividade -------------------   */
+@media (max-width: 920px ){
+    /* introdução*/
+    #introduction{
+        top: 80px;
+    }
+    #introduction h1{
+        max-width: 400px;
+        font-size: 20px;
+    }
+    #introduction p{
+        font-size: 15px;
+    }
+    /*presentes*/
+    #containerPresentes h1{
+        font-size: 20px;
+    }
+    #containerPresentes h1::after{
+        max-width: 80px;
+    }
+    #containerPresente h2{
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    #containerPresente div img{
+        width: 230px;
+    }
+
+}
+@media (max-width: 670px) {
+    #modalForm {
+        width: 500px;
+        height:320px;
+    }
+    .closeModal{
+        top:-320px;
+        left:240px;
+    }
+    .labelTextoModal{
+        max-width: 300px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 540px ){
+    #introduction{
+        top: 60px;
+    }
+    #introduction h1{
+        max-width: 270px;
+        font-size: 12px;
+    }
+    #introduction p{
+        font-size: 12px;
+        padding-left:100px;
+    }
+
+    #containerPresente{
+        max-width: 350px;
+        flex-direction: column;
+        height: 500px;
+        align-items: center;
+        padding:40px 0 0 0;
+
+    }
+    #containerPresente img{
+        height: 230px;
+        margin-left: 10px;
+    }
+    #containerPresente div {
+        height: 200px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+    #modalForm {
+        width: 310px;
+        height: 400px;
+    }
+    .textLike{
+        flex-direction: column;
+    }
+    .textLike label{
+        border-radius: 0px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-right: 2px solid #b9b6b0;
+        border-bottom: none;
+    }
+    .textLike input{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    #concordo{
+        margin-left: 20px;
+        width: 40px;
+        height: 40px;
+        padding-bottom: 20px;
+    }
+    .labelTextoModal{
+        max-width: 200px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .closeModal{
+        top:-415px;
+        left:140px;
+    }
+    #obs{
+        max-width: 250px;
+        text-align: center;
+    }
+}
+@media (max-width: 340px ){
+    #introduction{
+        top: 40px;
+    }
+    #introduction h1{
+        max-width: 280px;
+    }
+    #introduction p{
+        padding-left: 100px;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+    #containerPresente{
+        padding-top: 20px;
+    }
+    .infoPresentes{
+        justify-content: space-around;
+        margin-bottom: -20px; 
+    }
+    #modalForm {
+        width: 290px;
+        height: 440px;
+        margin: 10vh auto 0 auto;
+    }
+    .textLike{
+        flex-direction: column;
+    }
+    .textLike label{
+        border-radius: 0px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-right: 2px solid #b9b6b0;
+        border-bottom: none;
+    }
+    .textLike input{
+        width: 280px;
+        height: 45px;
+    }
+    #concordo{
+        margin-left: 10px;
+    }
+    .labelTextoModal{
+        max-width: 200px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .closeModal{
+        top:-450px;
+        left:135px;
+        width: 55px;
+        height: 60px;
+    }
+    #obs{
+        max-width: 250px;
+        text-align: center;
+    }
+    
+}

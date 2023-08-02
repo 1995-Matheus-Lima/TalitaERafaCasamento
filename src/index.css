@@ -127,9 +127,10 @@ background-color: rgb(166,140,124,.7);
     background-color: #b9b6b0;
 }
 #infoContent{
-    width: 960px;
+    max-width: 960px;
     display: block;
     margin: 0 auto;
+    padding: 30px;
 }
 /*---------------Contador -----------------*/
 #container_contador{
@@ -171,6 +172,13 @@ background-color: rgb(166,140,124,.7);
     justify-content: center;
     flex-direction: column;
     border-radius: 15px;
+    padding-top:5px
+}
+#container_contador ul li p{
+    font-size: 20px;
+    padding:0px;
+    margin:0px;
+    padding-bottom: 10px;
 }
 /* ------------- Presentes ----------------*/
 #containerPresentes {
@@ -468,85 +476,95 @@ footer a:hover{
     padding-top: 10px;
 }
 
-
-/*   ---------------- Responsividade -------------------   */
-@media (max-width: 920px ){
-    /* introdução*/
-    #introduction{
-        top: 80px;
-    }
-    #introduction h1{
-        max-width: 400px;
-        font-size: 20px;
-    }
-    #introduction p{
-        font-size: 15px;
-    }
-    /*presentes*/
-    #containerPresentes h1{
-        font-size: 20px;
-    }
-    #containerPresentes h1::after{
-        max-width: 80px;
-    }
-    #containerPresente h2{
-        font-size: 15px;
-        padding-left: 20px;
-    }
-    #containerPresente div img{
-        width: 230px;
-    }
-
-}
-@media (max-width: 670px) {
+/* responsividade*/
+@media (max-width: 840px ){
+    
     #modalForm {
-        width: 500px;
-        height:320px;
+        padding-top: 20px;
+        margin-top:10vh;
+        height: 270px;
     }
-    .closeModal{
-        top:-320px;
-        left:240px;
-    }
-    .labelTextoModal{
-        max-width: 300px;
+    #modalForm h1{
         text-align: center;
+        font-size: 36px;
+    }
+    #modalForm div {
+        padding: 5px 0;
+    
+    }
+    
+    #concordo{
+        margin-left: 20px;
+        width: 30px;
+        height: 30px;
         padding-bottom: 20px;
     }
+    .labelTextoModal{
+        max-width: 400px;
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 16px;
+    }
+    .closeModal{
+        top:-280px;
+        left:290px;
+    }
+    #obs{
+        max-width:400px;
+        text-align: center;
+        font-size: 16px;
+    }
 }
-@media (max-width: 540px ){
-    #introduction{
-        top: 60px;
-    }
-    #introduction h1{
-        max-width: 270px;
-        font-size: 12px;
-    }
-    #introduction p{
-        font-size: 12px;
-        padding-left:100px;
-    }
-
-    #containerPresente{
-        max-width: 350px;
-        flex-direction: column;
-        height: 500px;
-        align-items: center;
-        padding:40px 0 0 0;
-
-    }
-    #containerPresente img{
-        height: 230px;
-        margin-left: 10px;
-    }
-    #containerPresente div {
-        height: 200px;
-        margin-right: 0px;
-        padding: 0px;
-    }
+@media (max-width: 650px ){
+    
     #modalForm {
-        width: 310px;
-        height: 400px;
+        max-width: 400px;
     }
+    #modalForm h1{
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+    #modalForm div {
+        padding: 5px 0;
+    }
+    
+    #concordo{
+        font-size: 10px;
+    }
+    .labelTextoModal{
+        font-size: 16px;
+    }
+    .closeModal{
+        top:-280px;
+        left:200px;
+    }
+    #obs{
+        max-width:400px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    #container_contador ul li {
+        width: 100px;
+        height: 100px;
+    }
+    #container_contador ul li p{
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+}
+@media (max-width: 435px ){
+   
+    #modalForm {
+        width: 290px;
+        height: 470px;
+        margin: 15vh auto 0 auto;
+        padding:30px;
+    }
+    #modalForm h1{
+        padding-bottom: 15px;
+    }
+
     .textLike{
         flex-direction: column;
     }
@@ -560,76 +578,27 @@ footer a:hover{
     .textLike input{
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
-    }
-    #concordo{
-        margin-left: 20px;
-        width: 40px;
-        height: 40px;
-        padding-bottom: 20px;
-    }
-    .labelTextoModal{
-        max-width: 200px;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-    .closeModal{
-        top:-415px;
-        left:140px;
-    }
-    #obs{
-        max-width: 250px;
-        text-align: center;
-    }
-}
-@media (max-width: 340px ){
-    #introduction{
-        top: 40px;
-    }
-    #introduction h1{
-        max-width: 280px;
-    }
-    #introduction p{
-        padding-left: 100px;
-        margin-top: 5px;
-        font-size: 10px;
-    }
-    #containerPresente{
-        padding-top: 20px;
-    }
-    .infoPresentes{
-        justify-content: space-around;
-        margin-bottom: -20px; 
-    }
-    #modalForm {
-        width: 290px;
-        height: 440px;
-        margin: 10vh auto 0 auto;
-    }
-    .textLike{
-        flex-direction: column;
-    }
-    .textLike label{
-        border-radius: 0px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        border-right: 2px solid #b9b6b0;
-        border-bottom: none;
-    }
-    .textLike input{
         width: 280px;
         height: 45px;
+        
+    }
+    #modalForm div {
+        padding: 15px 0;
     }
     #concordo{
         margin-left: 10px;
+        font-size: 16px;
+
     }
     .labelTextoModal{
         max-width: 200px;
         text-align: center;
         padding-bottom: 20px;
+        font-size: 16px;
     }
     .closeModal{
-        top:-450px;
-        left:135px;
+        top:-500px;
+        left:165px;
         width: 55px;
         height: 60px;
     }
@@ -638,8 +607,24 @@ footer a:hover{
         text-align: center;
     }
     
+    
+    #container_contador ul{
+        list-style: none;
+        display: flex;
+        margin:0 auto;
+        max-width: 350px;
+        justify-content: space-around;
+        padding: 0px;
+    }
+    #container_contador ul li {
+        width: 80px;
+        height: 80px;
+    }
+    #container_contador ul li p{
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
 }
-
 
 
 /*Padrão tamanhos de fonte*/

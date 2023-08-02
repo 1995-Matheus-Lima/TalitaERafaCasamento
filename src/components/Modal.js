@@ -41,7 +41,7 @@ const Modal = ({nome, setNome , email, setEmail,setModal, id, dados}) => {
     sendEmail();
     await setDisplay('none');
     setTimeout(() =>{
-      document.getElementById("obs").innerText = "Presente Enviado com sucesso"; 
+      document.getElementById("obs").innerText = "Pronto! Agora você já pode comprar o presente no site da loja!"; 
     }, 1500);
     setTimeout(() =>{
       window.location.reload();
