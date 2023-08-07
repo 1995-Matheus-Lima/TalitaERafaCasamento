@@ -53,16 +53,6 @@ background-color: rgb(166,140,124,.7);
    margin-top:calc(-4vw - 3.5px);
 }
 
-@keyframes fadeInOut {
-    0% { opacity: .9; }
-    50% { opacity: 1; }
-    100% { opacity: .9; }
-}
-  
-.transitioning-image {
-    animation: fadeInOut 5s infinite;
-    background-color: rgb(166,140,124, 0.3);
-  }
   
 #introduction{
     display: flex;
@@ -108,7 +98,7 @@ background-color: rgb(166,140,124,.7);
 /*----------------infos--------------------*/
 #infoContainer{
     background-color: rgba(89,37,18,.95);
-    padding: 40px 0px 40px 0px;
+    padding: 50px 0px 50px 0px;
     margin: 0px;
     border-top: 3px solid #b9b6b0;
 
@@ -131,15 +121,28 @@ background-color: rgb(166,140,124,.7);
     display: block;
     margin: 0 auto;
     padding: 30px;
+    padding-top: 0;
+}
+.qrCode{
+    width: 210px;
+    display: block;
+    margin:0 auto;
+ }
+.qrCode p{
+    text-align: center;
+}
+.qrCode img{
+    display: block;
+    width: 200px;
+    margin: 15px auto;
 }
 /*---------------Contador -----------------*/
 #container_contador{
-    background-color: rgba(89,37,18,.95);
+    background-color: rgba(89,37,18,.85);
     margin: 0px;
-    padding: 40px 0px 40px 0px;
+    padding: 30px 0px 50px 0px;
     margin: -5px 0px 0px 0px;
     border-top: 3px solid #b9b6b0;
-    border-bottom: 3px solid #b9b6b0;
 }
 #container_contador h1{
     margin-bottom: 30px;
@@ -180,13 +183,52 @@ background-color: rgb(166,140,124,.7);
     margin:0px;
     padding-bottom: 10px;
 }
-/* ------------- Presentes ----------------*/
-#containerPresentes {
+/* ----------------Spotify--------------------*/
+.spotify{
     margin-top: -5px;
     max-width: 1440px;
-    background-color: rgba(89,37,18,.95);
+    background-color: rgba(89,37,18,.90);
     padding:30px;
+    border-bottom: 2px solid #b9b6b0;
+    border-top: 2px solid #b9b6b0;
+}
+.spotify a{
+    color: #d9d6d0;
+}
+/* ----------------Dress Code ------------------*/
+#DressCode {
+    margin-top: -5px;
+    max-width: 1440px;
+    background-color: rgba(89,37,18,.90);
+    padding: 50px 30px;
     border-top: 3px solid #b9b6b0;
+}
+#DressCode h1{
+    text-align: center;
+    letter-spacing: .1em;
+    color: #b9b6b0;
+    text-transform: capitalize;
+}
+#DressCode h1::after{
+    content: " ";
+    display: block;
+    width: 140px;
+    margin: 10px auto 0 auto;
+    border: 1px solid #b9b6b0;
+    background-color: #b9b6b0;
+}
+
+.cor {width:150px;
+    height:150px;
+    border-radius:50%;
+    margin:10px}
+/* ------------- Presentes ----------------*/
+#containerPresentes {
+    max-width: 1440px;
+    background-color: rgba(89,37,18,.95);
+    padding:50px 30px 50px 30px;
+    border-top: 3px solid #b9b6b0;
+    border-bottom: 2px solid #b9b6b0;
 }
 #containerPresentes h1{
     text-align: center;
@@ -201,6 +243,7 @@ background-color: rgb(166,140,124,.7);
     margin: 10px auto 0 auto;
     border: 1px solid #b9b6b0;
     background-color: #b9b6b0;
+    margin-bottom: 15px;
 }
 
 #containerPresente{
@@ -289,6 +332,7 @@ background-color: rgb(166,140,124,.7);
     width: 200px;
     height: 180px;
     border-radius: 30px;
+    border:10px solid rgba(89,37,18,.6)
 }
 #containerPresente div h2{
     display: flex;
@@ -299,12 +343,21 @@ background-color: rgb(166,140,124,.7);
 #containerPresente div h3{
     margin: 10px 0;
 } 
+.qrcode{
+    max-width: 100%;
+    text-align: center;
+}
+.qrcode h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
 
 /* ------------- Rodapé ------------- */
 footer{
     max-width: 1440px;
     text-align: center;
-    background-color: rgba(89,37,18,.95);
+    background-color: rgba(89,37,18,.90);
     border-top: 2px solid #d9d6d0;
     padding:20px;
     color:#d9d6d0
@@ -314,7 +367,7 @@ footer a{
     color:#d9d6d0;
 }
 footer a:hover{
-    color:#8C3D20;
+    font-weight: bolder;
 }
 
 
@@ -442,15 +495,22 @@ footer a:hover{
     color: rgba(140,89,59,.45);
 }
 
-/*  -------------------  wpp  -------------------------          */
+/*  -------------------  wpp e spotify  -------------------------          */
 
-#whatsapp{
+#whatsapp, #spotifyicon{
     max-width: 1440px;
-    background-color:rgba(89,37,18,.95);
+    background-color:rgba(89,37,18,.90);
     padding: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
-#whatsapp a{
+#whatsapp{
+    padding: 50px 30px
+
+}
+#spotifyicon{
+    background-color: rgba(89,37,18,.0);
+}
+#whatsapp a,#spotifyicon a{
     display: flex;
     width: 250px;
     margin: 0 auto;
@@ -461,24 +521,37 @@ footer a:hover{
     border-radius: 20px;
     padding-bottom: 10px;
 }
-#whatsapp a:hover{
+#whatsapp a:hover,#spotifyicon a:hover{
     border-color: aliceblue;
     color:aliceblue;
 }
-#whatsapp p{
+#whatsapp p,#spotifyicon p{
     width: 100px;
     text-align: center;
     padding: 10px 20px 0 0;
 }
-#whatsapp img{
+#whatsapp img, #spotifyicon img{
     width: 70px;
     height: 70px;
     padding-top: 10px;
 }
-
+#spotifyicon img{
+    opacity: .7;
+}
+.spotify{
+    padding-top: 50px;
+    background-color: rgba(89,37,18,.95);
+    border-bottom: none;
+    
+}
+.spotify > p, #whatsapp h3{
+    max-width: 840px;
+    display: block;
+    margin:0 auto;
+    padding-bottom: 5px;
+}
 /* responsividade*/
 @media (max-width: 840px ){
-    
     #modalForm {
         padding-top: 20px;
         margin-top:10vh;
@@ -552,12 +625,15 @@ footer a:hover{
         font-size: 15px;
         padding-bottom: 5px;
     }
+    .labelTextoModal{
+        max-width: 300px;
+    }
 }
 @media (max-width: 435px ){
    
     #modalForm {
         width: 290px;
-        height: 470px;
+        height: 530px;
         margin: 15vh auto 0 auto;
         padding:30px;
     }
@@ -597,7 +673,7 @@ footer a:hover{
         font-size: 16px;
     }
     .closeModal{
-        top:-500px;
+        top:-530px;
         left:165px;
         width: 55px;
         height: 60px;
@@ -624,6 +700,15 @@ footer a:hover{
         font-size: 14px;
         padding-bottom: 5px;
     }
+    .labelTextoModal{
+        max-width: 200px;
+    }
+    .cor {width:60px;
+        height:60px;
+    }
+    #frase{
+        padding: 30px;
+    }
 }
 
 
@@ -641,4 +726,10 @@ h3, p, li{
     color:#d9d6d0;
     font-size: 16px;
     font-weight: 700;
+    text-align: justify;
+}
+
+span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }

@@ -7,6 +7,8 @@ import WhatsApp from './components/WhatsApp.js';
 import CountdownTimer from './components/Timer.js'
 import WeddingInfo from './components/info.js'
 import LoveQuote from './components/frase.js'
+import DessCode from './components/DressCode.js'
+import Playlist from './components/Playlist.js';
 
 function App() {
   const [modal,setModal] = useState(false);
@@ -21,16 +23,20 @@ function App() {
   useEffect( () => {
     getData();
   },[""])
-  
+
+
+
   const targetDate = new Date('2024-02-24T16:00:00');
   return (
     <div id="mainContainer">
       <Header texto ="Texto do casamento da talita e da rafa"/>
       <LoveQuote/>
-      <WeddingInfo/>
       <CountdownTimer targetDate={targetDate}/>
+      <WeddingInfo/>
+      <DessCode/>
       <Presentes setModal = {setModal} setId={setId} dados ={dados}/>
-      <WhatsApp numTelefone={"5511982813127"} mensagem ={"Olá gente linda!"}/>
+      <WhatsApp numTelefone={"5531971189951"} mensagem ={"Oi princs <3"}/>
+      <Playlist/>
       <Footer/>
       {modal?<Modal setModal={setModal} nome={nome} setNome={setNome} email={email} setEmail={setEmail} id={id} dados ={dados}/>:null}
     </div>
